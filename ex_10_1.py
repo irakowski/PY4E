@@ -27,7 +27,7 @@ for line in file:
     emails[words[1]] = emails.get(words[1], 0) + 1
 
 lst = list()
-for key, value in list(emails.items()):
+for key, value in emails.items():
     lst.append((value, key))
 
 lst.sort(reverse=True)

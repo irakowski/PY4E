@@ -30,7 +30,7 @@ for i in acc:
     letters[i] = letters.get(i, 0) + 1
 
 list_to_sort = list()
-for key, value in list(letters.items()):
+for key, value in letters.items():
     list_to_sort.append((value, key))
 
 list_to_sort.sort(reverse=True)

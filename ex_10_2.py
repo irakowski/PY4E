@@ -38,7 +38,7 @@ for line in file:
     h[hours] = h.get(hours, 0) + 1
 
 h_list = list()
-for key, value in list(h.items()):
+for key, value in h.items():
     h_list.append((key, value))
 
 h_list.sort()
