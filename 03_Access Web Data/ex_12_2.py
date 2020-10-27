@@ -20,7 +20,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     try:
         s.connect((link, 80))
     except:
-        print("Failed to connect. Make sure the url exists")
+        print('Failed to connect. Make sure the url exists')
         quit()
 
     cmd = 'GET '+url+' HTTP/1.0\r\n\r\n'

@@ -27,13 +27,13 @@ except:
 try:    
     position =int(position)
 except:
-    print("Position value should be a number")
+    print('Position value should be a number')
     quit()
 
 html = urllib.request.urlopen(url, context=ctx).read()
 soup = BeautifulSoup(html, 'html.parser')
 
-# Retrieve all of the paragraph tags
+#For a given number of times, retrieve anchortags on the page, go to the link at a given positon
 for _ in range(count):
     a_tags = soup.find_all('a')
     links = list()

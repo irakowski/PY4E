@@ -17,7 +17,7 @@ url = input('Enter valid url:  ')
 html = urllib.request.urlopen(url, context=ctx).read()
 soup = BeautifulSoup(html, 'html.parser')
 
-# Retrieve all of the paragraph tags
+# Retrieve all spans and store innertext into list
 span_tags = soup.find_all('span')
 nums = list()
 for tag in span_tags:
