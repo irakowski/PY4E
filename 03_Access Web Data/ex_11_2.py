@@ -19,8 +19,8 @@ except:
 values = []
 for line in file:
     line = line.strip()
-    matches = re.findall(r'^New.*: ([0-9.]+)', line)
+    matches = re.findall(r'[0-9]+', line)
     if len(matches) > 0:
         for i in matches:
             values.append(int(i))
-print(f'{sum(values)/len(values)}')
+print(f'There are {len(values)} values with sum={sum(values)}')
